@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flet = "*"
+
+[dev-packages]
+autopep8 = "*"
+flake8 = "*"
+rope = "*"
+
+[requires]
+python_version = "3.13"
+python_full_version = "3.13.5"
+
+[scripts]
+start = "flet run fletodo.py"
+format = "autopep8 -ivr ."
+lint = "flake8 --show-source ."
