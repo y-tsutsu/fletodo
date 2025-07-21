@@ -10,6 +10,7 @@ flet = "*"
 autopep8 = "*"
 flake8 = "*"
 rope = "*"
+pyinstaller = "*"
 
 [requires]
 python_version = "3.13"
@@ -17,5 +18,6 @@ python_full_version = "3.13.5"
 
 [scripts]
 start = "flet run fletodo.py"
+build = "flet pack fletodo.py"
 format = "autopep8 -ivr ."
 lint = "flake8 --show-source ."
